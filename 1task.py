@@ -10,7 +10,7 @@ def clean_and_classify(messages):
     text = msg["message"].strip()
     if not user_id or not text:
       continue
-    t = text.lowe()
+    t = text.lower()
     category="unknown"
     for categ in ["grant_search", "report_request", "general_question"]:
       if any(word in t for word in keywords[categ]):
