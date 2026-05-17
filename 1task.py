@@ -16,7 +16,7 @@ def clean_and_classify(messages):
       if any(word in t for word in keywords[categ]):
         category=categ
         break
-    cleand.append({
+    cleaned.append({
       "user_id": user_id,
       "channel": msg["channel"],
       "message": text,
