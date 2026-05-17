@@ -64,3 +64,4 @@ The first thing to break is the LIKE '%...%' query because it forces a full tabl
 Sending all documents to the LLM causes large prompts, high cost, and context window limits. RAG setup fixes this by splitting documents into small chunks, embedding each chunk, and retrieving only the top‑k most relevant chunks for the prompt.
 ### Q3
 An LLM API can fail due to network errors or timeouts, invalid responses, or rate limits (429). Network issues I would handle with retries and timeouts. JSON I would validate response integrity and implement backoff.
+# I spent about 1 hour and 15 minutes completing tasks
